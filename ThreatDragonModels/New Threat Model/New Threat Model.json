@@ -490,14 +490,7 @@
                 "elevationOfPrivilege": 1
               }
             },
-            "zIndex": 4,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            }
+            "zIndex": 4
           },
           {
             "position": {
@@ -1118,7 +1111,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "API Endpoint",
-              "description": "",
+              "description": "Repudiation – Denied Transaction:\nAffected: API Endpoint.\nDescription: Users deny transactions without audit trails.\nClassification: Repudiation.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -1142,6 +1135,13 @@
                 "spoofing": 0,
                 "repudiation": 1
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ],
