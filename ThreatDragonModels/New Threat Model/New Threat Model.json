@@ -599,7 +599,7 @@
             "data": {
               "type": "tm.Process",
               "name": "WEB\nSERVER",
-              "description": "",
+              "description": "Tampering – Data Manipulation:\nAffected: Web Server.\nDescription: Attackers alter data between Web Server and other components, affecting transactions.\nClassification: Tampering.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -1001,13 +1001,6 @@
                 "spoofing": 1,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
