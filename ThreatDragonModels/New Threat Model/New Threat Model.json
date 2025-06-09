@@ -177,7 +177,7 @@
             "data": {
               "type": "tm.Process",
               "name": "DATABASE",
-              "description": "",
+              "description": "Information Disclosure – Database Breach:\nAffected: Database.\nDescription: Attackers exploit vulnerabilities to access sensitive data like bank details.\nClassification: Information Disclosure.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -317,7 +317,7 @@
             "data": {
               "type": "tm.Process",
               "name": "PAYMENT \nGATEWAY",
-              "description": "",
+              "description": "Tampering – Transaction Tampering:\nAffected: Payment Gateway.\nDescription: Attackers modify transaction data during API communication.\nClassification: Tampering.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -458,7 +458,7 @@
             "data": {
               "type": "tm.Process",
               "name": "ADMIN\nPORTAL",
-              "description": "",
+              "description": "Elevation of Privilege – Admin Exploit:\nAffected: Admin Portal.\nDescription: Attackers gain elevated access via portal vulnerabilities.\nClassification: Elevation of Privilege.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -490,7 +490,14 @@
                 "elevationOfPrivilege": 1
               }
             },
-            "zIndex": 4
+            "zIndex": 4,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
