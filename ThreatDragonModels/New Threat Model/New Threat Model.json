@@ -1,0 +1,16 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "New Threat Model",
+    "owner": "SONIA LIDDLE",
+    "description": "The StellarPay Digital Banking system is a web-based digital payment platform designed to provide secure and seamless financial transactions for its customers. This platform enables users to create accounts, link bank cards, send and receive money, pay for goods and services, and manage their financial transactions in real-time. Key components include a web server handling user interaction, a database storing bank account information, transaction logs, and user data, a payment gateway processing transaction, and an admin portal for application management. The system prioritizes security by protecting personal identification details, bank account information, transaction logs, and API communications with payment gateways. This threat model aims to proactively identify and mitigate potential cyber threats before deployment.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "Mr Moyo ",
+    "threatTop": 0
+  }
+}
