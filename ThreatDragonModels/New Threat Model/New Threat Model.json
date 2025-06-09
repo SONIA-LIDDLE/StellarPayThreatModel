@@ -599,7 +599,7 @@
             "data": {
               "type": "tm.Process",
               "name": "WEB\nSERVER",
-              "description": "Tampering – Data Manipulation:\nAffected: Web Server.\nDescription: Attackers alter data between Web Server and other components, affecting transactions.\nClassification: Tampering.",
+              "description": "Tampering – Data Manipulation:\nAffected: Web Server.\nDescription: Attackers alter data between Web Server and other components, affecting transactions.\nClassification: Tampering.\n\nDenial of Service – Server Overload:\nAffected: Web Server.\nDescription: Attackers flood the server, disrupting user access and transactions.\nClassification: Denial of Service.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
