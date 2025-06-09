@@ -977,7 +977,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "User Login",
-              "description": "",
+              "description": "Spoofing – Phishing Attack:\nAffected: User Login.\nDescription: Attackers create a fake login page to steal credentials, risking account access.\nClassification: Spoofing.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -1001,6 +1001,13 @@
                 "spoofing": 1,
                 "repudiation": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1135,13 +1142,6 @@
                 "spoofing": 0,
                 "repudiation": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ],
