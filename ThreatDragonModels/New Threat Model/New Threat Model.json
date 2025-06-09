@@ -19,7 +19,7 @@
         "cells": [
           {
             "position": {
-              "x": 60,
+              "x": 110,
               "y": 10
             },
             "size": {
@@ -45,7 +45,7 @@
           },
           {
             "position": {
-              "x": 465,
+              "x": 535,
               "y": 250
             },
             "size": {
@@ -71,8 +71,8 @@
           },
           {
             "position": {
-              "x": 90,
-              "y": 270
+              "x": 145,
+              "y": 280
             },
             "size": {
               "width": 100,
@@ -190,7 +190,7 @@
           },
           {
             "position": {
-              "x": 480,
+              "x": 570,
               "y": 290
             },
             "size": {
@@ -309,7 +309,7 @@
           },
           {
             "position": {
-              "x": 310,
+              "x": 370,
               "y": 50
             },
             "size": {
@@ -428,7 +428,7 @@
           },
           {
             "position": {
-              "x": 90,
+              "x": 145,
               "y": 50
             },
             "size": {
@@ -676,6 +676,245 @@
             "target": {
               "cell": "9180a0d6-a615-4e55-94d4-23f3adcb3be3",
               "port": "1a369df6-83c5-481c-8b86-08d17db609e4"
+            }
+          },
+          {
+            "position": {
+              "x": 10,
+              "y": 20
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "User Login"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "3e860d7c-c367-44df-9487-54906e05a6f4"
+                },
+                {
+                  "group": "right",
+                  "id": "ff843535-d347-4ceb-a929-7b5db0ea581e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2ed62fae-c4ef-4b2c-a100-4e46f44aa0e0"
+                },
+                {
+                  "group": "left",
+                  "id": "9c2669ab-90a5-4a5e-a029-1bc13e34043f"
+                }
+              ]
+            },
+            "id": "eb68b92a-5cd3-48a9-b02d-182ef02e9982",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Actor",
+              "name": "User Login",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 705,
+              "y": 300
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "API Endpoint"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "3e860d7c-c367-44df-9487-54906e05a6f4"
+                },
+                {
+                  "group": "right",
+                  "id": "ff843535-d347-4ceb-a929-7b5db0ea581e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2ed62fae-c4ef-4b2c-a100-4e46f44aa0e0"
+                },
+                {
+                  "group": "left",
+                  "id": "9c2669ab-90a5-4a5e-a029-1bc13e34043f"
+                }
+              ]
+            },
+            "id": "862d7cad-07ec-4eb5-b71d-7e4512f1e5af",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Actor",
+              "name": "API Endpoint",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ],
