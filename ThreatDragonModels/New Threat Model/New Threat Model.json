@@ -177,23 +177,23 @@
             "data": {
               "type": "tm.Process",
               "name": "DATABASE",
-              "description": "Information Disclosure – Database Breach:\nAffected: Database.\nDescription: Attackers exploit vulnerabilities to access sensitive data like bank details.\nClassification: Information Disclosure.",
+              "description": "Stores bank account information, transaction logs, and user data.\n",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
               "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
+              "handlesGoodsOrServices": true,
               "isWebApplication": false,
-              "privilegeLevel": "",
+              "privilegeLevel": "it handles sensitive financial data",
               "threats": [
                 {
                   "id": "5e6a8c59-7c8c-45ca-8bfd-4ca49bc8515c",
-                  "title": "New STRIDE threat",
+                  "title": "Database Breach",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Information disclosure",
-                  "description": "database breach",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": " Attackers break in and steal sensitive data like bank details due to weak security. The vulnerability is lax database security, including unpatched software or no encryption.\n",
+                  "mitigation": "Encrypt data with AES-256 and use role-based access controls. Do regular vulnerability scans and apply patches.\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 4,
@@ -204,10 +204,17 @@
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
