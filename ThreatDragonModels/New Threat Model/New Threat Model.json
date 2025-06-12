@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "f1f93177-807f-4e3f-8b7c-8885c1951893",
             "zIndex": -1,
+            "id": "f1f93177-807f-4e3f-8b7c-8885c1951893",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "INTERNAL Trust Boundary/ZONE",
@@ -59,8 +59,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "239d3b48-0e73-49f4-8000-d06d58a73e0f",
             "zIndex": -1,
+            "id": "239d3b48-0e73-49f4-8000-d06d58a73e0f",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "EXTERNAL ENTITY",
@@ -90,6 +90,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -173,7 +174,6 @@
               ]
             },
             "id": "0925e1c5-334c-43c0-a4a9-0eef6e84ee40",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "DATABASE",
@@ -231,6 +231,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -348,8 +349,7 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "zIndex": 3
+            }
           },
           {
             "position": {
@@ -372,6 +372,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -489,8 +490,7 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 1
               }
-            },
-            "zIndex": 4
+            }
           },
           {
             "position": {
@@ -513,6 +513,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -643,8 +644,7 @@
                 "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
-            },
-            "zIndex": 5
+            }
           },
           {
             "shape": "flow",
@@ -890,6 +890,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -973,24 +974,23 @@
               ]
             },
             "id": "eb68b92a-5cd3-48a9-b02d-182ef02e9982",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "User Login",
-              "description": "Spoofing – Phishing Attack:\nAffected: User Login.\nDescription: Attackers create a fake login page to steal credentials, risking account access.\nClassification: Spoofing.",
+              "description": "Personal identification details used for authentication.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
-              "providesAuthentication": false,
+              "providesAuthentication": true,
               "threats": [
                 {
                   "id": "a2b68449-b7aa-47d8-98c4-f781d9b4c0de",
-                  "title": "New STRIDE threat",
+                  "title": "Phishing Attack on User Login",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": " Attackers create a fake login page to trick users into giving away their credentials, allowing unauthorized access to accounts. The vulnerability is the lack of multi-factor authentication (MFA) and easy-to-mimic login pages.\n",
+                  "mitigation": "Add MFA with one-time codes (via app or SMS) for logins. Run training sessions to teach users how to spot phishing.\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
@@ -998,9 +998,16 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1024,6 +1031,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1107,7 +1115,6 @@
               ]
             },
             "id": "862d7cad-07ec-4eb5-b71d-7e4512f1e5af",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "API Endpoint",
@@ -1135,13 +1142,6 @@
                 "spoofing": 0,
                 "repudiation": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ],
