@@ -1111,20 +1111,20 @@
             "data": {
               "type": "tm.Actor",
               "name": "API Endpoint",
-              "description": "Repudiation – Denied Transaction:\nAffected: API Endpoint.\nDescription: Users deny transactions without audit trails.\nClassification: Repudiation.",
+              "description": " Facilitates communication between Web Server and Payment Gateway.\n",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
-              "providesAuthentication": false,
+              "providesAuthentication": true,
               "threats": [
                 {
                   "id": "50c0795b-0008-4b5c-a55a-09a76e3a5f6f",
-                  "title": "New STRIDE threat",
+                  "title": "Denied Transaction on API Endpoint",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Low",
                   "type": "Repudiation",
-                  "description": "denied transaction",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Users deny making a payment if there’s no good record to prove it. The vulnerability is weak logging, like missing timestamps or unverified records.\n",
+                  "mitigation": "Add tamper-proof logs with timestamps and signatures. Require regular log reviews to meet audit rules.\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 7,
@@ -1133,8 +1133,17 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "repudiation": 1
+                "repudiation": 2
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ],
