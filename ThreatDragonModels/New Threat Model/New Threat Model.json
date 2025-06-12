@@ -208,13 +208,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -466,23 +459,23 @@
             "data": {
               "type": "tm.Process",
               "name": "ADMIN\nPORTAL",
-              "description": "Elevation of Privilege – Admin Exploit:\nAffected: Admin Portal.\nDescription: Attackers gain elevated access via portal vulnerabilities.\nClassification: Elevation of Privilege.",
+              "description": "Hosts application code and provides administrative access.\n",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
+              "isWebApplication": true,
+              "privilegeLevel": "as it’s part of the admin interface",
               "threats": [
                 {
                   "id": "7166f2d2-38fb-457f-b841-aa999ea3b613",
-                  "title": "New STRIDE threat",
+                  "title": "Admin Portal Exploit",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Medium",
                   "type": "Elevation of privilege",
-                  "description": "admin exploit",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Attackers use a flaw to get super-user access through the portal. The vulnerability is loose access controls, like weak logins or unpatched flaws (e.g., XSS).\n",
+                  "mitigation": "Use MFA for admin logins and scan for flaws with tools like OWASP ZAP. Limit access to only trusted staff.\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 6,
@@ -495,8 +488,17 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
