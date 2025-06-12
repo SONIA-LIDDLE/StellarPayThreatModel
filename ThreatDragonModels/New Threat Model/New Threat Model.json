@@ -318,23 +318,23 @@
             "data": {
               "type": "tm.Process",
               "name": "PAYMENT \nGATEWAY",
-              "description": "Tampering – Transaction Tampering:\nAffected: Payment Gateway.\nDescription: Attackers modify transaction data during API communication.\nClassification: Tampering.",
+              "description": "Processes transaction data and interacts with external entities.\n",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
-              "handlesCardPayment": false,
+              "handlesCardPayment": true,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
-              "privilegeLevel": "",
+              "privilegeLevel": "as it handles transaction processing",
               "threats": [
                 {
                   "id": "f717183f-4de5-451c-a175-0df7afdddfa1",
-                  "title": "New STRIDE threat",
+                  "title": "Transaction Tampering on Payment Gateway",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Tampering",
-                  "description": "transaction tampering",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Attackers tweak transaction data during API calls, risking wrong payments. The vulnerability is unsecured data transfer with weak or no encryption in API calls.\n",
+                  "mitigation": "Use TLS 1.3 for API security and digital signatures for data checks. Set up regular API security checks.\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
@@ -343,7 +343,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -490,15 +490,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 2
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
