@@ -663,80 +663,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "Encrypted with TLS 1.3.",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "9c4a7970-bbca-4668-9697-6a76dd4957f4",
-                  "title": "Misconfigured TLS",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Weak TLS setup could allow data alteration",
-                  "mitigation": "Improper TLS Configuration,” describe: “Misconfigured encryption settings.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 9,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "07148f7f-b922-4490-bb0f-81fedbf8c243",
-            "source": {
-              "cell": "bef90487-c550-40d6-88ef-364eea65cdae",
-              "port": "b9e138ba-fa64-4b7a-b82b-0f417d2b02e1"
-            },
-            "target": {
-              "cell": "e1179193-da15-4e88-96b8-1ca1ecbb5069",
-              "port": "1a369df6-83c5-481c-8b86-08d17db609e4"
-            },
-            "vertices": [
-              {
-                "x": 380,
-                "y": 250
-              },
-              {
-                "x": 510,
-                "y": 310
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -958,8 +884,106 @@
               {
                 "x": 245,
                 "y": 380
+              },
+              {
+                "x": 330,
+                "y": 270
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "Encrypted with TLS 1.3.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "9c4a7970-bbca-4668-9697-6a76dd4957f4",
+                  "title": "Misconfigured TLS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Weak TLS setup could allow data alteration",
+                  "mitigation": "Improper TLS Configuration,” describe: “Misconfigured encryption settings.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "07148f7f-b922-4490-bb0f-81fedbf8c243",
+            "source": {
+              "cell": "bef90487-c550-40d6-88ef-364eea65cdae",
+              "port": "b9e138ba-fa64-4b7a-b82b-0f417d2b02e1"
+            },
+            "target": {
+              "cell": "e1179193-da15-4e88-96b8-1ca1ecbb5069",
+              "port": "1a369df6-83c5-481c-8b86-08d17db609e4"
+            },
+            "vertices": [
+              {
+                "x": 380,
+                "y": 250
+              },
+              {
+                "x": 510,
+                "y": 310
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -1103,16 +1127,9 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 4,
+                "spoofing": 5,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
